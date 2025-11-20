@@ -3,19 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upscayl Design - Shadcn Inspired</title>
+    <title>Upscayl Cloud - AI Image Enhancement Platform</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <header class="header">
             <div class="header-content">
-                <h1 class="logo">Upscayl</h1>
+                <div class="logo">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="logo-icon">
+                        <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="currentColor" opacity="0.5"/>
+                        <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Upscayl Cloud</span>
+                    <span class="beta-badge">BETA</span>
+                </div>
                 <nav class="nav">
-                    <a href="#" class="nav-link active">Home</a>
-                    <a href="#" class="nav-link">Features</a>
-                    <a href="#" class="nav-link">About</a>
-                    <a href="#" class="nav-link">Contact</a>
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#edits" class="nav-link">Edits</a>
+                    <a href="#generator" class="nav-link">AI Generator</a>
+                    <a href="#faq" class="nav-link">FAQ</a>
                 </nav>
                 <button class="btn btn-primary">Get Started</button>
             </div>
@@ -24,112 +35,282 @@
         <main class="main">
             <section class="hero">
                 <div class="hero-content">
-                    <h2 class="hero-title">Transform Your Images</h2>
-                    <p class="hero-description">
-                        Experience the power of AI-driven image upscaling. Enhance your photos with stunning clarity and detail.
-                    </p>
-                    <div class="hero-actions">
-                        <button class="btn btn-primary btn-lg">Upload Image</button>
-                        <button class="btn btn-secondary btn-lg">Learn More</button>
+                    <div class="hero-badge">Your images are being processed by Upscayl's open source AI models in the browser itself! No server needed.</div>
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" class="hero-icon">
+                        <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="currentColor" opacity="0.5"/>
+                        <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <h1 class="hero-title">Upscayl Cloud</h1>
+                    <p class="hero-subtitle">The brilliance of Upscayl, with the power of Cloud. No hardware constraints, just pure upscaling power.</p>
+                    <button class="btn btn-primary btn-lg">Get Started</button>
+                </div>
+            </section>
+
+            <section class="video-section">
+                <div class="section-header">
+                    <h2 class="section-title">All your needs<br>in one place</h2>
+                    <p class="section-description">Upscayl Cloud has the ability to handle<br>literally all your upscaling needs.</p>
+                </div>
+                <div class="video-container">
+                    <video class="demo-video" autoplay loop muted playsinline>
+                        <source src="https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-overlay"></div>
+                </div>
+            </section>
+
+            <section class="hardware-section">
+                <div class="hardware-content">
+                    <div class="hardware-text">
+                        <h2 class="hardware-title">Upscayl with power</h2>
+                        <h3 class="hardware-subtitle">No Hardware needed</h3>
+                        <p class="hardware-description">
+                            Upscayl Cloud leverages the immense power of cloud computing to upscale your images. You don't need a beefy PC, all you need is an internet connection and you're off to new horizons with just a tap!
+                        </p>
+                    </div>
+                    <div class="hardware-visual">
+                        <div class="cloud-icon">☁️</div>
+                        <div class="device-icons">
+                            <div class="device-card">💻</div>
+                            <div class="device-card">⚙️</div>
+                            <div class="device-card">🔧</div>
+                            <div class="device-card">🔒</div>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <section class="features">
+            <section class="browser-section">
+                <div class="browser-content">
+                    <div class="browser-preview">
+                        <div class="browser-window">
+                            <div class="browser-header">
+                                <div class="browser-dots">
+                                    <span></span><span></span><span></span>
+                                </div>
+                            </div>
+                            <div class="browser-body">
+                                <div class="upload-demo">Upscayl Image</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="browser-text">
+                        <h2 class="browser-title">Upscayl with power</h2>
+                        <h3 class="browser-subtitle">It works on browser too!</h3>
+                        <p class="browser-description">
+                            Whether it's on your phone, laptop, or chromebook—Upscayl Cloud is accessible to everyone! As long as you can open it in a browser, you can upscale your images like never before.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="experience-section">
+                <div class="experience-content">
+                    <h2 class="experience-subtitle">Upscayl with power</h2>
+                    <h3 class="experience-title">Enhanced Experience</h3>
+                    <p class="experience-description">
+                        Due to Upscayl Cloud being powered by cloud computing, we're able to add more features—more models, batch upscaling, and so much more. The experience has been upgraded, and we hope you'll love it!
+                    </p>
+                    <div class="emoji-display">😊</div>
+                </div>
+            </section>
+
+            <section class="features" id="features">
                 <div class="section-header">
-                    <h3 class="section-title">Features</h3>
-                    <p class="section-description">Everything you need for perfect image enhancement</p>
+                    <h2 class="section-title">Features?<br>Plenty!</h2>
+                    <p class="section-description">Upscayl Cloud has everything you<br>need to upscale your images and more.</p>
                 </div>
                 <div class="cards-grid">
                     <div class="card">
-                        <div class="card-icon">✨</div>
-                        <h4 class="card-title">AI-Powered</h4>
+                        <div class="card-icon-wrapper">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h4 class="card-title">No hardware required</h4>
                         <p class="card-description">
-                            Advanced machine learning algorithms ensure the highest quality upscaling results.
+                            Upscayl Cloud will run on literally every machine thanks to it not needing any special hardware or drivers.
                         </p>
                     </div>
                     <div class="card">
-                        <div class="card-icon">⚡</div>
-                        <h4 class="card-title">Lightning Fast</h4>
+                        <div class="card-icon-wrapper">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M13 2L3 14h8l-1 8 10-12h-8l1-8z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h4 class="card-title">Super fast upscaling</h4>
                         <p class="card-description">
-                            Process your images in seconds with our optimized processing pipeline.
+                            Upscayl Cloud is powered by the latest technology to provide you with a blazing fast upscaling experience.
                         </p>
                     </div>
                     <div class="card">
-                        <div class="card-icon">🎨</div>
-                        <h4 class="card-title">Multiple Formats</h4>
+                        <div class="card-icon-wrapper">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <circle cx="12" cy="12" r="3" fill="currentColor"/>
+                                <path d="M12 1v6m0 6v6M1 12h6m6 0h6" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h4 class="card-title">More models, more formats</h4>
                         <p class="card-description">
-                            Support for PNG, JPG, WEBP and more. Export in your preferred format.
+                            More upscaling models and more formats to export your images in. Choose what works best for you.
                         </p>
                     </div>
                     <div class="card">
-                        <div class="card-icon">🔒</div>
-                        <h4 class="card-title">Privacy First</h4>
+                        <div class="card-icon-wrapper">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect x="3" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2"/>
+                                <rect x="14" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2"/>
+                                <rect x="3" y="14" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2"/>
+                                <rect x="14" y="14" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h4 class="card-title">Any resolution</h4>
                         <p class="card-description">
-                            Your images are processed locally. No data leaves your device.
+                            Upscale images to whatever resolution you want. We support upscaling to 8K and beyond.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon-wrapper">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M17 8l-5-5-5 5M12 3v12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h4 class="card-title">Convenient Usage</h4>
+                        <p class="card-description">
+                            Simply login and upload your images to get started with AI-powered upscaling.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon-wrapper">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect x="2" y="2" width="20" height="20" rx="2" stroke="currentColor" stroke-width="2"/>
+                                <path d="M8 2v20M16 2v20M2 8h20M2 16h20" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h4 class="card-title">Commercial Usage</h4>
+                        <p class="card-description">
+                            Pay as you go and get unlimited upscales. Upscayl Cloud is perfect for commercial usage.
                         </p>
                     </div>
                 </div>
             </section>
 
-            <section class="upload-section">
-                <div class="upload-card">
-                    <div class="upload-icon">📤</div>
-                    <h3 class="upload-title">Ready to enhance your images?</h3>
-                    <p class="upload-description">Drag and drop your image or click to browse</p>
-                    <div class="upload-area">
-                        <input type="file" id="file-input" class="file-input" accept="image/*">
-                        <label for="file-input" class="upload-label">
-                            <span class="upload-text">Choose file</span>
-                            <span class="upload-hint">or drag and drop</span>
-                        </label>
-                    </div>
-                    <div class="upload-options">
-                        <div class="form-group">
-                            <label class="form-label">Scale Factor</label>
-                            <select class="select">
-                                <option>2x</option>
-                                <option>4x</option>
-                                <option>8x</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label">Model</label>
-                            <select class="select">
-                                <option>Real-ESRGAN</option>
-                                <option>ESRGAN</option>
-                                <option>Waifu2x</option>
-                            </select>
-                        </div>
-                    </div>
+            <section class="highlight-section" id="edits">
+                <div class="highlight-card">
+                    <div class="highlight-icon">✨</div>
+                    <h3 class="highlight-title">Upscayl Edits</h3>
+                    <p class="highlight-description">
+                        Beyond just upscaling, Upscayl Edits brings professional-grade image enhancement tools to your fingertips. Adjust brightness, contrast, saturation, and apply AI-powered filters to perfect your images. All processing happens instantly in the cloud with zero quality loss.
+                    </p>
+                    <ul class="highlight-features">
+                        <li>AI-powered color correction</li>
+                        <li>Smart noise reduction</li>
+                        <li>Batch editing capabilities</li>
+                        <li>Non-destructive editing workflow</li>
+                    </ul>
+                    <button class="btn btn-secondary">Learn More</button>
                 </div>
             </section>
 
-            <section class="stats">
-                <div class="stats-grid">
-                    <div class="stat-card">
-                        <div class="stat-value">10M+</div>
-                        <div class="stat-label">Images Processed</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-value">99.9%</div>
-                        <div class="stat-label">Uptime</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-value">4.9/5</div>
-                        <div class="stat-label">User Rating</div>
-                    </div>
+            <section class="highlight-section" id="generator">
+                <div class="highlight-card highlight-card-reverse">
+                    <div class="highlight-icon">🎨</div>
+                    <h3 class="highlight-title">Upscayl AI Image Generator</h3>
+                    <p class="highlight-description">
+                        Create stunning images from text descriptions using our cutting-edge AI image generation technology. Whether you need concept art, product mockups, or creative visuals, Upscayl AI Generator brings your ideas to life with unprecedented quality and detail.
+                    </p>
+                    <ul class="highlight-features">
+                        <li>Text-to-image generation</li>
+                        <li>Style transfer and variations</li>
+                        <li>High-resolution output up to 8K</li>
+                        <li>Multiple art styles and models</li>
+                    </ul>
+                    <button class="btn btn-secondary">Try Generator</button>
+                </div>
+            </section>
+
+            <section class="faq-section" id="faq">
+                <div class="section-header">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-description">Can't find the answer you're looking for?<br>Reach out to Upscayl Support.</p>
+                </div>
+                <div class="faq-list">
+                    <details class="faq-item">
+                        <summary class="faq-question">What is Upscayl Cloud?</summary>
+                        <p class="faq-answer">Upscayl Cloud is a cloud-powered version of Upscayl that allows you to upscale images without requiring powerful hardware on your device.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-question">How is it different from Upscayl Desktop?</summary>
+                        <p class="faq-answer">Unlike desktop version, Upscayl Cloud runs entirely in your browser and uses cloud computing power, meaning no local GPU required.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-question">How do I use Upscayl Cloud Beta?</summary>
+                        <p class="faq-answer">Simply sign up for beta access, upload your images, select your preferred settings, and let our cloud infrastructure handle the processing.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-question">How much does Upscayl Cloud Beta cost?</summary>
+                        <p class="faq-answer">During the beta period, Upscayl Cloud is free to use. We'll announce pricing details before the official launch.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-question">What models are available on Upscayl Cloud Beta?</summary>
+                        <p class="faq-answer">We support Real-ESRGAN, ESRGAN, and multiple other AI models optimized for different types of images.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-question">Do you plan an API for Upscayl Cloud Beta?</summary>
+                        <p class="faq-answer">Yes! API access is planned for commercial users and will be available after the beta period.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-question">Do we get API Keys for Upscayl Cloud Beta?</summary>
+                        <p class="faq-answer">API keys will be provided to eligible users during the commercial launch phase.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-question">How do I access my upscaled images?</summary>
+                        <p class="faq-answer">All upscaled images are available for immediate download and are stored in your account for 30 days.</p>
+                    </details>
                 </div>
             </section>
         </main>
 
         <footer class="footer">
+            <div class="footer-brand">
+                <h2 class="footer-logo">UPSCAYLUPSCAYLUPSCAYL</h2>
+            </div>
             <div class="footer-content">
-                <p>&copy; 2025 Upscayl. All rights reserved.</p>
-                <div class="footer-links">
-                    <a href="#" class="footer-link">Privacy</a>
-                    <a href="#" class="footer-link">Terms</a>
-                    <a href="#" class="footer-link">Support</a>
+                <div class="footer-main">
+                    <div class="footer-section">
+                        <h4 class="footer-title">Upscayl.</h4>
+                        <p class="footer-tagline">AI Image Upscaler</p>
+                    </div>
+                    <div class="footer-section">
+                        <div class="footer-links">
+                            <div class="footer-column">
+                                <a href="#" class="footer-link">English ▼</a>
+                                <a href="#" class="footer-link">FAQ</a>
+                            </div>
+                            <div class="footer-column">
+                                <a href="#" class="footer-link">Cloud</a>
+                                <a href="#" class="footer-link">Support</a>
+                            </div>
+                            <div class="footer-column">
+                                <a href="#" class="footer-link">Privacy Policy</a>
+                                <a href="#" class="footer-link">Download</a>
+                            </div>
+                            <div class="footer-column">
+                                <a href="#" class="footer-link">Docs</a>
+                                <a href="#" class="footer-link">Blog</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="social-links">
+                        <a href="#" class="social-link">⭐</a>
+                        <a href="#" class="social-link">✕</a>
+                        <a href="#" class="social-link">📧</a>
+                    </div>
+                    <p class="copyright">Copyright @ 2022-present Upscayl</p>
                 </div>
             </div>
         </footer>
